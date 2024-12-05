@@ -1,6 +1,5 @@
-// src/pages/Home.jsx
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -10,18 +9,18 @@ const Home = () => {
         Bu yerda sizning reklamangiz bo'lishi mumkin edi!
       </p>
       <div className="space-x-4">
-        <Link
+        <NavLink
           to="/users"
           className="bg-[#004b23] text-white px-6 py-3 rounded hover:bg-[#38b000] transition"
         >
           View Users
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/create-user"
           className="bg-[#004b23] text-white px-6 py-3 rounded hover:bg-[#38b000] transition"
         >
           Add New User
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

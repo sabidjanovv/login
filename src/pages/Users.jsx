@@ -1,9 +1,8 @@
 import React, {useContext} from 'react'
 import { UserContext } from "../context/UserContext";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Users = () => {
-    const { addUser, updateUser } = useContext(UserContext);
     const { users, deleteUser } = useContext(UserContext);
     const navigate = useNavigate();
 
